@@ -4,51 +4,72 @@
 <!--La cabeza del lenguaje html-->
 
 <head>
-    <!--charset y UFT-8 ayudara que todos los simbolos puedan estar disponibles en la pagina web-->
-    <!--meta rel y href ayuda para el incremento de los tipos de dispositivos que estaran disponibles la pagina-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos/bases.css">
+    <link rel="stylesheet" href="estilos/mains.css">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <!--Titulo de la pesta de la pagina-->
+    <!--<link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css"-->
+    <!--JavaScript
+    ===================================================-->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <!--Casita Salinera - icono de la pestaña
+    ===================================================-->
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/Logo.jfif">
+
     <title>La Casita Salinera</title>
 </head>
 <!--Inicio del cuerpo del codigo HTML-->
 
-<body>
+<body id="top">
+    <!--vista de carga o loading-->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <!--header nos ayudara especificamente para informacion del encabezado, en este caso de la pagina-->
     <!--div es un contenedor donde estan los logotipos de la licoreria casita salinera-->
-    <header>
-        <div>
-            <!--img src es la representacion para el ingreso de los logoticos de la empresa-->
-            <!--"imagenes" es la carpeta donde se ingresara para visualizar al loggo.jfif y al Pajaro Azul.png-->
-            <!--Tamaño de logo es de 100pixeles de ancho y 100 pixeles de largo-->
-            <!--al momento de que las ilustraciuones se caigan el atl sera como referencia de que trata cada una-->
-            <img src="imagenes/Logo.jfif" alt="Logo" width="100px" height="100px">
-            <img src="imagenes/Pájaro Azúl.png" alt="pájaro azúl" width="100px" height="100px">
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html" class="site-logo">
+                <img src="imagenes/Pájaro Azúl.png" width="50px" height="50px" alt="Homepage">
+            </a>
         </div>
-        <!--Ingreso de redes sociales de la licoreria casita salinera-->
-        <!--"imagenes" es donde esta ubicado el logo de facebook.png con  su nombre y 50 pixeles de ancho y 50 pixeles de largo-->
-        <a href="https://www.facebook.com/p/La-Casa-Salinera-100064593046415/"><img src="imagenes/Logo Facebook.png"
-                alt="Logo Facebook" width="50px" height="50px"></a>
-        <div>
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introducción</a></li>
+                <li><a href="#about" title="about" class="smoothscroll">Nosotros</a></li>
+                <li><a href="#services" title="services" class="smoothscroll">Servicios</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">Ubicación</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">Contactanos</a></li>
+            </ul>
+            <!--Creamos una lista desordenada para las redes sociales
+            ======================================-->
+            <ul class="header-social">
+                <li><a href="https://www.facebook.com/p/La-Casa-Salinera-100064593046415/"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-menu-toggle"><span>Menu</span></a>
+    </header><!--fin del header-->
 
-        </div>
-    </header>
     <!--Section un contenedor donde tendra en su contenido el titulo principal de la pagina web-->
     <!--Tamaño de letras h1 de licoreria la casita salinera-->
-    <section>
+    <div class="Titulo-Casita">
         <h1>Licorería La Casita Salinera</h1>
-    </section>
+    </div>
     <!--Contendor de informacion licoreria casita salienra-->
-    <section>
-        <div>
+
+    <section class="Content-About">
+        <div class="title-about us">
             <!--Sub titulo con tamaño de letras h2-->
             <h2>
                 Sobre Nosotros
             </h2>
         </div>
         <!--Nuevo contenedor para la informacion de la empresa-->
-        <div>
+        <div class="content-about">
             <!--Tamaño de palabras h4-->
             <h4>
                 <!--Parrafo uno-->
@@ -76,13 +97,14 @@
         </div>
         <!--Contenedor para imagen del local de la casita salinera-->
         <!--Ubicada en la carpeta "imagenes" con titulo de la ilustracion-->
-        <div>
+        <div class="visual-casita">
             <img src="imagenes/Local.jpg" alt="Local de la Casita Salinera">
         </div>
     </section>
     <!--Contenedores-->
-    <section>
-        <div>
+
+    <section class="Content-Products">
+        <div class="title-products">
             <!--Titulo de los productos disponibles de la licoreria casita salinera-->
             <!--Tamaño de letras h2-->
             <h2>
@@ -91,7 +113,7 @@
 
         </div>
         <!--Contenedor con lista desordenada-->
-        <div>
+        <div class="content-products">
             <ul>
                 <!--Subtitulos de los licores disponibles de la casita salinera-->
                 <!--Ilustraciones de los licores con su respectivo nombre con los pixeles de ancho y largo cada uno-->
@@ -116,12 +138,13 @@
     </section>
     <!--Logo de google maps como indicacion al usuario indicar la ubicacion de la licoreria casita salinera-->
     <!--ubicando en la carpeta de "imagenes" la ilustracion google.png con el nombre de que trata la imagen-->
-    <section>
-        <div>
+    
+    <section class="Ubication">
+        <div class="visual-ubication">
             <img src="imagenes/Google.png" alt="google maps">
         </div>
         <!--contenedor-->
-        <div>
+        <div class="ubicacion-content">
             <!--Parrafo de texto de instruccion uno para el destino de licoreria casita salinera-->
             <p>
                 Para llegar a "La Casita Salinera" entrando a Salinas, sigue estos pasos: Al ingresar por la vía
