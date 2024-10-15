@@ -1,0 +1,77 @@
+/* Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 16px;
+}
+
+/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(max-width:500px) {
+    html {
+        font-size: 9.41176px;
+    }
+
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    height: 100%;
+}
+
+/*Se cambiara tanto el tipo de letra, tambien el color del fondo*/
+body {
+    /*Fondo*/
+    background: beige;
+    /*Seleccionar el tipo de letra en funcion al codio en base*/
+    font-family: Lexend;
+    /*La etiqueta rem va a recoger el tamaño padre que es 16px y lo multiplicara por 1.7*/
+    font-size: 1.7rem;
+    /*El estilo de la letra será normal*/
+    font-style: normal;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    font-weight: 2px;
+    /*Es el ancho que existe entre los espacios de las palabras o sangria*/
+    line-height: 1.882;
+    /*Color de las letras*/
+    color: black;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    margin: 0;
+    /*Le va a dar un margen desde el exterior hacia el interior del contenedor*/
+    padding: 12px;
+}
+
+/*Estilos a los links*/
+a {
+    /*Cambia el color del texto del enlace a maroon*/
+    color: maroon;
+    /*all: Aplica la transición a cualquier propiedad que cambie*/
+    /*0.3s: La duración de la transición es de 0.3 segundos.*/
+    /*ease-in-out: Define cómo será la curva de aceleración:*/
+    /*Al inicio de la transición, la velocidad aumentará lentamente (ease-in).*/
+    /*Al final, la velocidad disminuirá suavemente (ease-out)*/
+    transition: all 0.3s ease-in-out;
+
+}
+
+/*Transicion de estilos para los links*/
+a:hover,
+/*Le genera un pequeño brillo*/
+a:focus,
+/*color cuando pasa el cursor*/
+a:active {
+    color: rgb(117, 194, 184);
+}
+
+.s-header.sticky {
+    background: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    display: inline-block;
+    margin: -20px -65px;
+    position: relative;
+    top: 50%;
+    left: 40px;
+}
