@@ -1,0 +1,11 @@
+body {
+   background: #f8d89c;
+
+}
+.tiendauno a {
+    border: 1px solid black;
+    width: 100%; /* Para ocupar todo el ancho */
+    height: 100%; /* Para ocupar todo el alto */
+    background-color: #d2a06b; /* Color café */
+    position: relative; /* Asegúrate de que el contenedor se posicione de forma absoluta o relativa, según el diseño */
+}
